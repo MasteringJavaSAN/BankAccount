@@ -66,5 +66,16 @@ public class BankDetails {
    Done with Getters and Setters *************************************************************************************
    */
 
+   /*Method for depositing funds*/
+   public int depositeFund(int amount){
+     return this.balance=this.balance+amount;
+   }
 
+   /*Method to withdraw amount */
+   public int withdrawFund(int amount) {
+       if (amount < this.balance) {
+           return this.balance - amount;
+       } else
+           return -1;
+   }
 }
